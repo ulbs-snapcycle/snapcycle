@@ -28,4 +28,5 @@ public static class Constants
     public const string USER_DELETED = "User successfully deleted.";
     public const string USER_DOES_NOT_EXIST = "This user does not exist";
     public const string USERS_DO_NOT_EXIST = "There are no users.";
+    public const string WRONG_PASSWORD = "Incorrect password or email!";
 }

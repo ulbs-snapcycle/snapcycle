@@ -24,7 +24,7 @@ public class ImageRepository : IImageRepository
             .Include(appointment => appointment.UserImages)
             .ToListAsync();
     }
-
+    
     public async Task<Image> GetByIdAsync(int id)
     {
         return await _context.Images.FirstOrDefaultAsync(appointment => appointment.Id == id);
@@ -32,7 +32,7 @@ public class ImageRepository : IImageRepository
 
     public async Task<Image> GetByNameAsync(String name)
     {
-        return await _context.Images.FirstOrDefaultAsync(image => image.Name == name);
+        return await _context.Images.FirstOrDefaultAsync(image => image.Name.Equals(name));
     }
 
     public async Task<Image> CreateAsync(String name)

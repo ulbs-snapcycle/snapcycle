@@ -33,6 +33,12 @@ public class UserRepository : IUserRepository
             .FirstOrDefaultAsync(user => user.Id == id);
     }
 
+    public async Task<User> GetByEmailAsync(string email)
+    {
+        return await _context.Users
+            .FirstOrDefaultAsync(user => user.Email.Equals(email));
+    }
+
     public async Task<User> CreateAsync(CreateUserRequest userRequest)
     {
         User user = _mapper.Map<User>(userRequest);
