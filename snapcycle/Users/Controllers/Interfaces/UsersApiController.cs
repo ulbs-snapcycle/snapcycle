@@ -36,4 +36,11 @@ public abstract class UsersApiController : ControllerBase
     [ProducesResponseType(statusCode:404,type:typeof(String))]
     [Produces("application/json")]
     public abstract Task<ActionResult> DeleteUser([FromRoute]int id);
+    
+    /*[HttpPost("login")]
+    [ProducesResponseType(statusCode:200,type:typeof(User))]
+    [ProducesResponseType(statusCode:401,type:typeof(String))]
+    [ProducesResponseType(statusCode:404,type:typeof(String))]
+    [Produces("application/json")]
+    public abstract Task<ActionResult<User>> TryLogin([FromBody]UserLoginRequest userRequest);*/
 }

@@ -1,0 +1,38 @@
+*, h1, h2{
+    margin: 0;
+    padding : 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    display: inline-block;
+    max-width: 300px;
+}
+
+.warning{
+    display: none;
+    transition: all 0.25s;
+    opacity: 0;
+    color: red;
+}

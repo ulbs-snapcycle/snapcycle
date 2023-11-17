@@ -93,4 +93,23 @@ public class UsersController : UsersApiController
             return NotFound(ex.Message);
         }
     }
+
+    /*public override async Task<ActionResult<User>> TryLogin(UserLoginRequest userRequest)
+    {
+        try
+        {
+            User user = await _queryService.GetUserByEmail(userRequest.Email);
+
+            if (!user.Password.Equals(userRequest.Password))
+            {
+                return Ok(Constants.WRONG_PASSWORD);
+            }
+
+            return Ok(User);
+        }
+        catch (ItemDoesNotExist ex)
+        {
+            return NotFound(ex.Message);
+        }
+    }*/
 }

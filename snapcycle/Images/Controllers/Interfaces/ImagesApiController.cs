@@ -13,7 +13,7 @@ public abstract class ImagesApiController : ControllerBase
     [Produces("application/json")]
     public abstract Task<ActionResult<IEnumerable<Image>>> GetAllImages();
     
-    [HttpGet("appointment/{id}")]
+    [HttpGet("image/{id}")]
     [ProducesResponseType(statusCode:200,type:typeof(Image))]
     [ProducesResponseType(statusCode:404,type:typeof(String))]
     [Produces("application/json")]
@@ -29,4 +29,9 @@ public abstract class ImagesApiController : ControllerBase
     [ProducesResponseType(statusCode:404,type:typeof(String))]
     [Produces("application/json")]
     public abstract Task<ActionResult> DeleteImage([FromRoute]int id);
+
+    [HttpGet("image_file/{id}")]
+    [ProducesResponseType(statusCode: 200, type: typeof(FileResult))]
+    [ProducesResponseType(statusCode: 404, type: typeof(String))]
+    public abstract Task<ActionResult> GetImageFileById(int id);
 }

@@ -30,6 +30,8 @@ public class UserImagesController : UserImagesApiController
         {
             IEnumerable<UserImage> result = await _queryService.GetAllUserAppointments();
 
+            _queryService.GetAllUserAppointments();
+            
             return Ok(result);
         }
         catch (ItemsDoNotExist ex)

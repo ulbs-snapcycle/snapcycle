@@ -1,5 +1,6 @@
 ﻿using polyclinic_service.System.Constants;
 using polyclinic_service.System.Exceptions;
+using polyclinic_service.Users.DTOs;
 using polyclinic_service.Users.Models;
 using polyclinic_service.Users.Repository.Interfaces;
 using polyclinic_service.Users.Services.Interfaces;
@@ -39,4 +40,16 @@ public class UserQueryService : IUserQueryService
 
         return result;
     }
+
+    /*public async Task<User> GetUserByEmail(string email)
+    {
+        User user = await _repository.GetByEmailAsync(email);
+        
+        if (user == null)
+        {
+            throw new ItemDoesNotExist(Constants.USER_DOES_NOT_EXIST);
+        }
+
+        return user;
+    }*/
 }

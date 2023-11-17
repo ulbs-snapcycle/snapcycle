@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.StaticFiles;
 using polyclinic_service.System.Constants;
 using polyclinic_service.System.Exceptions;
 using snapcycle.Images.Controllers.Interfaces;
@@ -108,6 +109,29 @@ public class ImagesController : ImagesApiController
         catch (ItemDoesNotExist ex)
         {
             _logger.LogInformation($"Rest response: {ex.Message}");
+            return NotFound(ex.Message);
+        }
+    }
+
+    public override async Task<ActionResult> GetImageFileById(int id)
+    {
+        try
+        {
+            Image image = await _queryService.GetImageById(id);
+            var storage = Path.Combine(_environment.ContentRootPath, "Images/Storage");
+            var filePath = Path.Combine(storage, image.Name);
+
+            var provider = new FileExtensionContentTypeProvider();
+            if (!provider.TryGetContentType(filePath, out var contentType))
+            {
+                contentType = "application/octet-stream";
+            }
+
+            var fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read);
+            return new FileStreamResult(fileStream, contentType);
+        }
+        catch (ItemDoesNotExist ex)
+        {
             return NotFound(ex.Message);
         }
     }
