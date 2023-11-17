@@ -57,9 +57,9 @@ public class ImagesController : ImagesApiController
 
     public override async Task<ActionResult<Image>> CreateImage(IFormFile file)
     {
-        if (!new List<String>{".png",".jpeg",".bmp",".webp"}.Contains(Path.GetExtension(file.FileName).ToLower()))
+        if (!new List<String>{".png",".jpeg",".jpg",".bmp",".webp"}.Contains(Path.GetExtension(file.FileName).ToLower()))
         {
-            return new BadRequestObjectResult("Only .png, .jpeg, .webp, .bmp files are allowed.");
+            return new BadRequestObjectResult("Only .png, .jpeg, .jpg, .webp, .bmp files are allowed.");
         }
 
         string extension = Path.GetExtension(file.FileName).ToLower();
