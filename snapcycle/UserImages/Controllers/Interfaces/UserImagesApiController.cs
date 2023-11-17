@@ -30,4 +30,10 @@ public abstract class UserImagesApiController : ControllerBase
     [ProducesResponseType(statusCode:404,type:typeof(String))]
     [Produces("application/json")]
     public abstract Task<ActionResult> DeleteUserImage([FromRoute]int id);
+    
+    [HttpGet("all_trash")]
+    [ProducesResponseType(statusCode:200,type:typeof(IEnumerable<TrashType>))]
+    [ProducesResponseType(statusCode:404,type:typeof(String))]
+    [Produces("application/json")]
+    public abstract Task<ActionResult<IEnumerable<TrashType>>> GetAllTrashTypes();
 }

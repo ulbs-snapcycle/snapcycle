@@ -54,7 +54,7 @@ public class UserImagesController : UserImagesApiController
             return NotFound(ex.Message);
         }
     }
-    
+
     public override async Task<ActionResult<UserImage>> CreateUserImage(CreateUserImageRequest userRequest)
     {
         _logger.LogInformation($"Rest request: Create user with DTO:\n{userRequest}");
@@ -77,5 +77,22 @@ public class UserImagesController : UserImagesApiController
             _logger.LogInformation($"Rest response: {ex.Message}");
             return NotFound(ex.Message);
         }
+    }
+
+    public override async Task<ActionResult<IEnumerable<TrashType>>> GetAllTrashTypes()
+    {
+        _logger.LogInformation("Rest request: Get all trash types.");
+
+        List<string> response = new List<string>
+        {
+            TrashTypeMapping.GetString(TrashType.Paper),
+            TrashTypeMapping.GetString(TrashType.Plastic),
+            TrashTypeMapping.GetString(TrashType.Glass),
+            TrashTypeMapping.GetString(TrashType.Metal),
+            TrashTypeMapping.GetString(TrashType.Organic),
+            TrashTypeMapping.GetString(TrashType.Electronic),
+        };
+
+        return Ok(response);
     }
 }
