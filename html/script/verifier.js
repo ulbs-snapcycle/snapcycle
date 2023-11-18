@@ -1,9 +1,9 @@
+const userId = getQueryParameter('userId');
 function getQueryParameter(name) {
     const urlSearchParams = new URLSearchParams(window.location.search);
     return urlSearchParams.get(name);
 }
 
-const userId = getQueryParameter('userId');
 const image = document.getElementById("image");
 const buttons = document.getElementsByClassName("button");
 const trash = document.getElementById("trash");

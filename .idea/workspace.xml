@@ -5,28 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3512c09-b68c-4b65-a2e0-371871222ec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/html/images/icons/Horrible.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/images/icons/None.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/images/icons/Partial.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/images/icons/Perfect.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/script/verifier.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/style/verifier.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/verifier.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapcycle/Data/Migrations/ModifyUserImagesTable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/images/noimageloaded.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/images/uploadyourimage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/script/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/style/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Storage/96SWOhYgjKkl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Storage/a6uD56PGn8il.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Storage/oU4BwAkmy5gJ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/Interfaces/UserImagesApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/Interfaces/UserImagesApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/UserImagesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/UserImagesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/DTOs/CreateUserImageRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/DTOs/CreateUserImageRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Models/ResultType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Models/ResultType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Models/TrashTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Models/TrashType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Models/UserImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Models/UserImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/addimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/player.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/script/addimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/player.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/script/menuNavigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/script/verifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/verifier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/style/addimage.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/style/player.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/style/gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/verifier.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/verifier.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +52,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "task-5-create-pages",
-    "last_opened_file_path": "D:/mycode/asp.net/snapcycle/html/script",
+    "git-widget-placeholder": "task-6-style-gallery-and-player",
+    "last_opened_file_path": "D:/mycode/asp.net/snapcycle/html/style",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -74,12 +64,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mycode\asp.net\snapcycle\html\style" />
       <recent name="D:\mycode\asp.net\snapcycle\html\script" />
       <recent name="D:\mycode\asp.net\snapcycle\html\images\icons" />
-      <recent name="D:\mycode\asp.net\snapcycle\html\style" />
       <recent name="D:\mycode\asp.net\snapcycle\html" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mycode\asp.net\snapcycle\html\images" />
       <recent name="D:\mycode\asp.net\snapcycle\html" />
     </key>
   </component>
@@ -92,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700225993579</updated>
       <workItem from="1700225994608" duration="8640000" />
-      <workItem from="1700286050121" duration="11729000" />
+      <workItem from="1700286050121" duration="14695000" />
     </task>
     <servers />
   </component>
