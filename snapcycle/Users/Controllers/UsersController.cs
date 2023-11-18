@@ -94,22 +94,35 @@ public class UsersController : UsersApiController
         }
     }
 
-    /*public override async Task<ActionResult<User>> TryLogin(UserLoginRequest userRequest)
+    public override async Task<ActionResult<User>> TryLogin(UserLoginRequest userRequest)
     {
         try
         {
-            User user = await _queryService.GetUserByEmail(userRequest.Email);
+            User user = await _queryService.TryLoginUser(userRequest.Email, userRequest.Password);
 
-            if (!user.Password.Equals(userRequest.Password))
-            {
-                return Ok(Constants.WRONG_PASSWORD);
-            }
-
-            return Ok(User);
+            return Ok(user);
+        }
+        catch (WrongPassword ex)
+        {
+            return Unauthorized(ex.Message);
         }
         catch (ItemDoesNotExist ex)
         {
             return NotFound(ex.Message);
         }
-    }*/
+    }
+
+    public override async Task<ActionResult<User>> UpdateScore(UpdateScoreRequest userRequest)
+    {
+        try
+        {
+            User user = await _commandService.UpdateScore(userRequest.Id, userRequest.Result, userRequest.Trash);
+
+            return Ok(user);
+        }
+        catch (ItemDoesNotExist ex)
+        {
+            return NotFound(ex.Message);
+        }
+    }
 }

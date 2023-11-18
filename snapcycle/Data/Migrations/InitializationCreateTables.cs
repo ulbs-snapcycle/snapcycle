@@ -3,7 +3,7 @@ using FluentMigrator;
 
 namespace polyclinic_service.Data.Migrations;
 
-[Migration(103112023)]
+[Migration(171120231)]
 public class InitializationCreateTables : Migration
 {
     public override void Up()

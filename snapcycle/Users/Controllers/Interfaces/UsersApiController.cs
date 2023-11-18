@@ -37,10 +37,16 @@ public abstract class UsersApiController : ControllerBase
     [Produces("application/json")]
     public abstract Task<ActionResult> DeleteUser([FromRoute]int id);
     
-    /*[HttpPost("login")]
+    [HttpPost("login")]
     [ProducesResponseType(statusCode:200,type:typeof(User))]
     [ProducesResponseType(statusCode:401,type:typeof(String))]
     [ProducesResponseType(statusCode:404,type:typeof(String))]
     [Produces("application/json")]
-    public abstract Task<ActionResult<User>> TryLogin([FromBody]UserLoginRequest userRequest);*/
+    public abstract Task<ActionResult<User>> TryLogin([FromBody]UserLoginRequest userRequest);
+
+    [HttpPut("update_score")]
+    [ProducesResponseType(statusCode: 202, type: typeof(User))]
+    [ProducesResponseType(statusCode: 404, type: typeof(String))]
+    [Produces("application/json")]
+    public abstract Task<ActionResult<User>> UpdateScore(UpdateScoreRequest userRequest);
 }

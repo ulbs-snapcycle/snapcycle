@@ -20,13 +20,22 @@ public class User
     public string Password { get; set; }
     
     [Required]
-    public string Gender { get; set; }
-    
-    [Required]
-    public int Age { get; set; }
-    
-    [Required]
     public string Phone { get; set; }
+    
+    [Required]
+    public int Score { get; set; }
+    
+    [Required]
+    public int CountTotal { get; set; }
+    
+    [Required]
+    public int CountHorrible { get; set; }
+    
+    [Required]
+    public int CountPartial { get; set; }
+    
+    [Required]
+    public int CountPerfect { get; set; }
     
     [Required]
     public UserType Type { get; set; }

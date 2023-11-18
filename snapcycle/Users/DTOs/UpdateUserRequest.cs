@@ -18,12 +18,6 @@ public class UpdateUserRequest
     public string Password { get; set; }
     
     [Required]
-    public string Gender { get; set; }
-    
-    [Required]
-    public int Age { get; set; }
-    
-    [Required]
     public string Phone { get; set; }
     
     [Required]
@@ -36,8 +30,6 @@ public class UpdateUserRequest
         message += $"Name: {Name}\n";
         message += $"Email: {Email}\n";
         message += $"Password: {Password}\n";
-        message += $"Gender: {Gender}\n";
-        message += $"Age: {Age}\n";
         message += $"Phone: {Phone}\n";
         message += $"Type: {Type}\n";
         return message;
