@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3512c09-b68c-4b65-a2e0-371871222ec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/html/images/noimageloaded.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/images/uploadyourimage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapcycle-sql/snapcycle.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/addimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/player.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/gallery.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/script/addimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/player.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/script/menuNavigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/images/icons/Horrible.svg" beforeDir="false" afterPath="$PROJECT_DIR$/html/images/icons/Horrible.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/images/icons/None.svg" beforeDir="false" afterPath="$PROJECT_DIR$/html/images/icons/None.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/images/icons/Partial.svg" beforeDir="false" afterPath="$PROJECT_DIR$/html/images/icons/Partial.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/images/icons/Perfect.svg" beforeDir="false" afterPath="$PROJECT_DIR$/html/images/icons/Perfect.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/script/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/script/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/player.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/script/verifier.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/verifier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/style/addimage.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/style/player.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/style/gallery.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/verifier.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/verifier.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/style/verifier.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/style/verifier.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,22 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "task-6-style-gallery-and-player",
-    "last_opened_file_path": "D:/mycode/asp.net/snapcycle/html/style",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task-6-style-gallery-and-player&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/mycode/asp.net/snapcycle/html/style&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\mycode\asp.net\snapcycle\html\style" />
@@ -84,6 +83,8 @@
       <updated>1700225993579</updated>
       <workItem from="1700225994608" duration="8640000" />
       <workItem from="1700286050121" duration="14695000" />
+      <workItem from="1700302836726" duration="2000" />
+      <workItem from="1700311626672" duration="5473000" />
     </task>
     <servers />
   </component>

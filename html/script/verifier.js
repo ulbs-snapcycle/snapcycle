@@ -83,18 +83,25 @@ function getNextImage(){
         method: 'GET'
     })
         .then(response => {
-            if(response.status === 404) {
-                // NO MORE IMAGES CASE
+            if (response.status === 404) {
+                console.log('No more images available.');
+            } else {
+                return response.json();
             }
-            else return response.json();
         })
-        .then(data =>{
-            currentUserImageId = data[0].id;
-            currentUserId = data[0].userId;
-            currentImageId = data[0].imageId;
-            updateTrashType();
-            updateImage();
-        });
+        .then(data => {
+            if (data && data.length > 0) {
+                currentUserImageId = data[0].id;
+                currentUserId = data[0].userId;
+                currentImageId = data[0].imageId;
+                updateTrashType();
+                updateImage();
+            } else {
+                image.src = "images/noimageloaded.png";
+                trash.innerHTML = "NONE";
+            }
+        })
+        .catch(error => console.error('Error fetching user images:', error));
 }
 
 function updateScoreAndImages(index){

@@ -48,7 +48,11 @@ function login(){
         })
         .then(data => {
             if(data.type === 1){
-                // REDIRECT TO PLAYER
+                const query = { userId: data.id };
+                const queryString = Object.entries(query).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join('&');
+                const redirectUrl = 'player.html' + '?' + queryString;
+
+                window.location.href = redirectUrl;
             }
             if(data.type === 2){
                 const query = { userId: data.id };
