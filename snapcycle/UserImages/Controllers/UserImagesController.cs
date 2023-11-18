@@ -72,7 +72,7 @@ public class UserImagesController : UserImagesApiController
         {
             await _commandService.DeleteUserImage(id);
 
-            return Accepted(Constants.USER_DELETED, Constants.USER_DELETED);
+            return Accepted(Constants.USER_IMAGE_DELETED, Constants.USER_IMAGE_DELETED);
         }
         catch (ItemDoesNotExist ex)
         {

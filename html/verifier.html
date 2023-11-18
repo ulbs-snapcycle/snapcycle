@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Verifier Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/verifier.css">
+</head>
+<body>
+  <main class="main-container">
+    <img id="image" class="image" src="test.png" alt="">
+    <h1 class="trash" id="trash">none</h1>
+    <ul class="rating-container">
+      <li class="rating">
+        <button class="button" onclick="buttonClick(0)"><img src="images/icons/Horrible.svg" alt="" class="rating-icon"></button>
+      </li>
+      <li class="rating">
+        <button class="button" onclick="buttonClick(1)"><img src="images/icons/None.svg" alt="" class="rating-icon"></button>
+      </li>
+      <li class="rating">
+        <button class="button" onclick="buttonClick(2)"><img src="images/icons/Partial.svg" alt="" class="rating-icon"></button>
+      </li>
+      <li class="rating">
+        <button class="button" onclick="buttonClick(3)"><img src="images/icons/Perfect.svg" alt="" class="rating-icon"></button>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
+
+<script src="script/verifier.js"></script>

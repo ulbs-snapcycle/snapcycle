@@ -23,4 +23,7 @@ public class UserImage
     
     [JsonIgnore]
     public virtual Image Image { get; set; }
+    
+    [Required]
+    public TrashType TrashType { get; set; }
 }

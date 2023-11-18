@@ -5,23 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3512c09-b68c-4b65-a2e0-371871222ec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/html/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/script/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/style/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/style/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snapcycle/Users/DTOs/UserLoginRequest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Controllers/ImagesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Images/Controllers/ImagesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Controllers/Interfaces/ImagesApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Images/Controllers/Interfaces/ImagesApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Repository/ImageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Images/Repository/ImageRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/System/Constants/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/System/Constants/Constants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/images/icons/Horrible.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/images/icons/None.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/images/icons/Partial.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/images/icons/Perfect.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/script/verifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/style/verifier.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/verifier.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snapcycle/Data/Migrations/ModifyUserImagesTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/script/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/script/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/style/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Storage/96SWOhYgjKkl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Storage/a6uD56PGn8il.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Storage/oU4BwAkmy5gJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/Interfaces/UserImagesApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/Interfaces/UserImagesApiController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/UserImagesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Controllers/UserImagesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Users/Controllers/Interfaces/UsersApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Users/Controllers/Interfaces/UsersApiController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Users/Controllers/UsersController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Users/Controllers/UsersController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Users/Repository/Interfaces/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Users/Repository/Interfaces/IUserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Users/Repository/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Users/Repository/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Users/Services/Interfaces/IUserQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Users/Services/Interfaces/IUserQueryService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snapcycle/Users/Services/UserQueryService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Users/Services/UserQueryService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/DTOs/CreateUserImageRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/DTOs/CreateUserImageRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Models/ResultType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Models/ResultType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Models/TrashTypes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Models/TrashType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/UserImages/Models/UserImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/UserImages/Models/UserImage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +56,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task2-add-login-and-register-html-pages&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/mycode/asp.net/snapcycle&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "task-5-create-pages",
+    "last_opened_file_path": "D:/mycode/asp.net/snapcycle/html/script",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mycode\asp.net\snapcycle\html\script" />
+      <recent name="D:\mycode\asp.net\snapcycle\html\images\icons" />
+      <recent name="D:\mycode\asp.net\snapcycle\html\style" />
+      <recent name="D:\mycode\asp.net\snapcycle\html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mycode\asp.net\snapcycle\html" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700225993579</updated>
       <workItem from="1700225994608" duration="8640000" />
+      <workItem from="1700286050121" duration="11729000" />
     </task>
     <servers />
   </component>
