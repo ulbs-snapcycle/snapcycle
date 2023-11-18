@@ -7,5 +7,6 @@ public interface IUserQueryService
 {
     Task<IEnumerable<User>> GetAllUsers();
     Task<User> GetUserById(int id);
-    /*Task<User> GetUserByEmail(String email);*/
+    Task<User> GetUserByEmail(String email);
+    Task<User> TryLoginUser(string email, string password);
 }

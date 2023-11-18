@@ -21,6 +21,8 @@ public static class Constants
     public const string USER_IMAGE_DELETED = "User image successfully deleted.";
     public const string USER_IMAGE_DOES_NOT_EXIST = "This user image does not exist.";
     public const string USER_IMAGES_DO_NOT_EXIST = "There are no user images.";
+    public const string RESULT_SUBMITTED = "Successfully submitted result!";
+    public const string RESULT_SUBMIT_ERROR = "Something unexpected happened when trying to submit the result!";
     
     // USERS
     public const string USER_CREATED = "User successfully created.";

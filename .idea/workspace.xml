@@ -10,6 +10,7 @@
       <change afterPath="$PROJECT_DIR$/html/style/login.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/html/style/reset.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/snapcycle/Users/DTOs/UserLoginRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snapcycle/Images/Controllers/ImagesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Images/Controllers/ImagesController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapcycle/Images/Controllers/Interfaces/ImagesApiController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Images/Controllers/Interfaces/ImagesApiController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapcycle/Images/Repository/ImageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Images/Repository/ImageRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snapcycle/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/snapcycle/Program.cs" afterDir="false" />
@@ -39,9 +40,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2YIvdJY42S3bJM6mee57xP6WySU" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,22 +51,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "task2-add-login-and-register-html-pages",
-    "last_opened_file_path": "D:/mycode/asp.net/snapcycle",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;task2-add-login-and-register-html-pages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/mycode/asp.net/snapcycle&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700225993579</updated>
-      <workItem from="1700225994608" duration="8425000" />
+      <workItem from="1700225994608" duration="8640000" />
     </task>
     <servers />
   </component>

@@ -4,6 +4,7 @@ using polyclinic_service.Users.DTOs;
 using polyclinic_service.Users.Models;
 using polyclinic_service.Users.Repository.Interfaces;
 using polyclinic_service.Users.Services.Interfaces;
+using snapcycle.UserImages.Models;
 
 namespace polyclinic_service.Users.Services;
 
@@ -47,5 +48,17 @@ public class UserCommandService : IUserCommandService
         }
             
         await _repository.DeleteAsync(id);
+    }
+
+    public async Task<User> UpdateScore(int id, ResultType result, TrashType trash)
+    {
+        User user = await _repository.GetByIdAsync(id);
+        
+        if (user == null)
+        {
+            throw new ItemDoesNotExist(Constants.USER_DOES_NOT_EXIST);
+        }
+        
+        return await _repository.UpdateScores(id, result, trash);
     }
 }
