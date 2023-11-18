@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Add image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/player.css">
+</head>
+<body>
+    <main class="main-container">
+        <h1 class="score" id="score">Your Score : 0</h1>
+        <section class="image-selection">
+            <label class="custom-upload-image" for="uploadImage">Select</label>
+            <input type="file" id="uploadImage" name="user_trash_image" onchange="previewImage()" hidden="true">
+            <select id="trash-list" class="trash" name="user_trash_type">
+                <option value="0">Paper</option>
+                <option value="1">Plastic</option>
+                <option value="2">Glass</option>
+                <option value="3">Metal</option>
+                <option value="4">Organic</option>
+                <option value="5">Electronic</option>
+            </select>
+        </section>
+        <img src="images/uploadyourimage.png" alt="" class="image" id="image">
+        <button type="submit" id="uploadButton" onclick="buttonClick()">Upload Image</button>
+    </main>
+</body>
+</html>
+
+<script src="script/player.js"></script>

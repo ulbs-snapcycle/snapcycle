@@ -16,6 +16,8 @@ public class ModifyUsersTable : Migration
         
         Delete.Column("Gender").FromTable("Users");
         Delete.Column("Age").FromTable("Users");
+        
+        Execute.Script(@"./Data/Scripts/start-users.sql");
     }
 
     public override void Down()

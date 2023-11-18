@@ -13,7 +13,6 @@ public class InitializationCreateTables : Migration
         CreateUserImagesTable();
         CreateIndexes();
         CreateForeignKeys();
-        SeedInitialData();
     }
 
     private void CreateUsersTable()
@@ -54,11 +53,6 @@ public class InitializationCreateTables : Migration
     {
         Create.ForeignKey("FK_UserImages_User").FromTable("UserImages").ForeignColumn("UserId").ToTable("Users").PrimaryColumn("Id").OnDelete(Rule.Cascade);
         Create.ForeignKey("FK_UserImages_Image").FromTable("UserImages").ForeignColumn("ImageId").ToTable("Images").PrimaryColumn("Id").OnDelete(Rule.Cascade);
-    }
-
-    private void SeedInitialData()
-    {
-        Execute.Script(@"./Data/Scripts/start-users.sql");
     }
 
     public override void Down()
