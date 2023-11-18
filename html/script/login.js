@@ -13,6 +13,11 @@ function displayWarning(){
     }, 1);
 }
 
+function invalidCredentials(){
+    warning.innerHTML = "Incorrect email or password!";
+    displayWarning();
+}
+
 function login(){
     if(isStringNullOrWhitespace(email.value) || isStringNullOrWhitespace(password.value)){
         warning.innerHTML = "Please complete all fields!";
@@ -21,20 +26,36 @@ function login(){
     }
 
     const url = "http://localhost:5068/api/v1/Users/login";
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    headers.append("Email", "a");
-    headers.append("Password", "a");
-    console.log(headers);
+    const data = {
+        email: email.value,
+        password: password.value
+    };
 
     fetch(url, {
-        method: 'GET',
+        method: 'POST',
         headers: {
-            "Content-Type": "application/json",
-            "Email": "a",
-            "Password": "a"
-        }
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
     })
-        .then(response => { return response.json(); })
-        .then(data => console.log(data));
+        .then(response => {
+            if(response.status === 401 || response.status === 404) {
+                invalidCredentials();
+                throw new Error(`Invalid credentials`);
+            }
+            else return response.json();
+        })
+        .then(data => {
+            if(data.type === 1){
+                // REDIRECT TO PLAYER
+            }
+            if(data.type === 2){
+                const query = { userId: data.id };
+                const queryString = Object.entries(query).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join('&');
+                const redirectUrl = 'verifier.html' + '?' + queryString;
+
+                window.location.href = redirectUrl;
+            }
+        });
 }

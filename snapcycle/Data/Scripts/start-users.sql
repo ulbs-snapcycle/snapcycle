@@ -48,3 +48,5 @@ insert into Users (Id, Name, Email, Password, Gender, Age, Phone, Type) values (
 insert into Users (Id, Name, Email, Password, Gender, Age, Phone, Type) values (48, 'Orelie Ashington', 'oashington1b@youtu.be', 'bqpIHL04', 'Female', 56, '+86 333 568 8466', 3);
 insert into Users (Id, Name, Email, Password, Gender, Age, Phone, Type) values (49, 'Harmony Harber', 'hharber1c@cdbaby.com', 'qgxCTB17', 'Female', 3, '+62 869 792 9130', 1);
 insert into Users (Id, Name, Email, Password, Gender, Age, Phone, Type) values (50, 'Archibold Lincey', 'alincey1d@ca.gov', 'tsnFSS54', 'Male', 51, '+7 388 677 6445', 3);
+insert into Users(Id,Name,Email,Password,Phone,Type) values(51, 'Florescu Cristian', 'florescucristian@email.com','parola','+407123456789',1);
+insert into Users(Id,Name,Email,Password,Phone,Type) values(52, 'Achim Marius', 'achimmarius@email.com','parola','+407123456789',2);

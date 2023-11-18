@@ -14,7 +14,7 @@ public abstract class UserImagesApiController : ControllerBase
     [Produces("application/json")]
     public abstract Task<ActionResult<IEnumerable<UserImage>>> GetAllUserAppointments();
     
-    [HttpGet("user_appointment/{id}")]
+    [HttpGet("user_image/{id}")]
     [ProducesResponseType(statusCode:200,type:typeof(UserImage))]
     [ProducesResponseType(statusCode:404,type:typeof(String))]
     [Produces("application/json")]

@@ -2,8 +2,8 @@ namespace snapcycle.UserImages.Models;
 
 public enum ResultType
 {
-    None,
     Horrible,
+    None,
     Partial,
     Perfect
 }
